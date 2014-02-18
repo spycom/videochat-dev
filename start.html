@@ -21,18 +21,10 @@
 	<div class="menu">
 		<div class="container clearfix">
 
-			<div id="logo" class="grid_3">
+			<div id="logo" class="grid_12">
 				<img src="img/logo1.png">
 			</div>
 
-			<!--<div id="nav" class="grid_9 omega">
-				<ul class="navigation">
-					<li data-slide="1">Top Slide</li>
-					<li data-slide="2">Parallax Scrolling</li>
-					<li data-slide="3">Grid</li>
-					<li data-slide="4">Credits</li>
-				</ul>
-			</div>-->
 
 		</div>
 	</div>
@@ -41,16 +33,13 @@
 	<div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
 		<div class="container clearfix">
 
-			<div id="content" class="grid_12">
-				<div id='my_local_video'>
-					<video id='localVideo' autoplay muted ></video>
-				</div>
-				
-				<div id='videos'>
-    
-   					 <video id='remoteVideo' autoplay></video>
-    
- 				</div>
+			<div id="content" class="grid_13">
+				<div class="video" >
+					<div  class="my_video" >
+					</div>
+					<div  class="chat" >
+					</div>
+				</div>	
 				
 								 
 			</div>
@@ -69,11 +58,6 @@
 			<h1>Do you want to find more rooms?</h1>
 				<h2>Use map and list of available rooms</h2>
 				<h2> and find more video chats.</h2>
-				<script src='/socket.io/socket.io.js'></script>
-        		<script src='js/lib/adapter.js'></script>
-       			<script src='js/main.js'></script>
-		 	<div id='my_room'>My room: - </div>	
-			<div id="map-canvas"></div>
 			</div>
 			<div id="content" class="grid_1">
 			<div id="test" class="grid_1">1</div> <div id="test" class="grid_11 omega">2</div>
@@ -85,17 +69,129 @@
 
 		</div>
 	</div>
-    <div id="map-canvas"></div> 
+    
+    <div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
+		<div class="container clearfix">
+
+			<div id="content" class="grid_12">
+				<h1>Gallery of best moments</h1>
+				<h2></h2>
+				<div id="arrow_wrap">
+      <div id="prev"><a href="javascript:void(0);"><img src="img/prev.png" alt="prev" /></a></div>
+      <div id="photo_wrap">
+        <div id="close_msg" class="hide">
+          <p>Click Image To close</p>
+        </div>
+        <ul id="thumbs">
+          <li>
+            <ul class="group" class="grid_12">
+              <li>
+                <div class="thumb_img"><a href="img/image1.jpg"><img src="img/thumbs/thumb1.jpg" alt="thumb1" /></a></div>
+                <div class="thumb_desc">
+                  <p>This texture came from an advertising board on the streets of New York.</p>
+                </div>
+              </li>
+              <li>
+                <div class="thumb_img"><a href="img/image2.jpg"><img src="img/thumbs/thumb2.jpg" alt="thumb2" /></a></div>
+                <div class="thumb_desc">
+                  <p>This texture is from a wall I took a photo of.</p>
+                </div>
+              </li>
+              <li>
+                <div class="thumb_img"><a href="img/image3.jpg"><img src="img/thumbs/thumb3.jpg" alt="thumb3" /></a></div>
+                <div class="thumb_desc">
+                  <p>This is some old wood with some interesting paint on it.</p>
+                </div>
+              </li>
+              <li>
+                <div class="thumb_img"><a href="img/image4.jpg"><img src="img/thumbs/thumb4.jpg" alt="thumb4" /></a></div>
+                <div class="thumb_desc">
+                  <p>This is another old advertising board that had been picked apart</p>
+                </div>
+              </li>
+              <li>
+                <div class="thumb_img"><a href="img/image5.jpg"><img src="img/thumbs/thumb5.jpg" alt="thumb5" /></a></div>
+                <div class="thumb_desc">
+                  <p>I don't remember if I downloaded this one or shot it, but it is a garage door.</p>
+                </div>
+              </li>
+              <li>
+                <div class="thumb_img"><a href="img/image6.jpg"><img src="img/thumbs/thumb6.jpg" alt="thumb1" /></a></div>
+                <div class="thumb_desc">
+                  <p>This is on an iron rail outside a brownstone that has been rusted.</p>
+                </div>
+              </li>
+            </ul>
+            <ul class="group">
+              <li>
+                <div class="thumb_img"><a href="img/image7.jpg"><img src="img/thumbs/thumb7.jpg" alt="thumb1" /></a></div>
+                <div class="thumb_desc">
+                  <p>Another concrete texture. Interesting colors.</p>
+                </div>
+              </li>
+              <li>
+                <div class="thumb_img"><a href="img/image8.jpg"><img src="img/thumbs/thumb8.jpg" alt="thumb2" /></a></div>
+                <div class="thumb_desc">
+                  <p>Texture of rusted metal that I got off stockxchange.</p>
+                </div>
+              </li>
+              <li>
+                <div class="thumb_img"><a href="img/image9.jpg"><img src="img/thumbs/thumb9.jpg" alt="thumb3" /></a></div>
+                <div class="thumb_desc">
+                  <p>Some weird "broccoli" according to my roomate, although I think it is suspect.</p>
+                </div>
+              </li>
+              <li>
+                <div class="thumb_img"><a href="img/image10.jpg"><img src="img/thumbs/thumb10.jpg" alt="thumb4" /></a></div>
+                <div class="thumb_desc">
+                  <p>Some wood with graffiti on it and some kind of paper.</p>
+                </div>
+              </li>
+              <li>
+                <div class="thumb_img"><a href="img/image11.jpg"><img src="img/thumbs/thumb11.jpg" alt="thumb5" /></a></div>
+                <div class="thumb_desc">
+                  <p>Another rusty door for your pleasure</p>
+                </div>
+              </li>
+              <li>
+                <div class="thumb_img"><a href="img/image12.jpg"><img src="img/thumbs/thumb12.jpg" alt="thumb1" /></a></div>
+                <div class="thumb_desc">
+                  <p>This is the sidewalk on the north side of houston and mott I believe in NYC.</p>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <!-- end thumbs-->
+        <div class="loading"><img src="img/ajax-loader.gif" /></div>
+        <div id="large_images">
+          
+        </div>
+        <!--end photo wrap -->
+        
+      </div>
+      <div id="next"><a href="javascript:void(0);"><img src="img/next.png" alt="next" /></a></div>
+      <!--end arrow wrap -->
+    </div>
+			</div>
+
+			<div id="test" class="grid_12">
+				<div id="map-canvas"></div> 
+			</div>
+		
+			
+		</div>
+	</div>
 
 	<div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
 		<div class="container clearfix">
 
 			<div id="content" class="grid_12">
 				<h1>Contacts</h1>
-				<p><a href="https://twitter.com/Jalxob" target="_blank"><img src="img/twitter.png"></a>
-					<a href="http://dribbble.com/jalxob" target="_blank"><img src="img/youtube.png"></a>
-					<a href="https://twitter.com/Jalxob" target="_blank"><img src="img/facebook.png"></a>
-					<a href="https://twitter.com/Jalxob" target="_blank"><img src="img/google.png"></a>
+				<p><a href="https://twitter.com/" target="_blank"><img src="img/twitter.png"></a>
+					<a href="http://dribbble.com/" target="_blank"><img src="img/youtube.png"></a>
+					<a href="https://twitter.com/" target="_blank"><img src="img/facebook.png"></a>
+					<a href="https://twitter.com/" target="_blank"><img src="img/google.png"></a>
 				</p>
 			</div>
 

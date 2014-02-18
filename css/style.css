@@ -1,5 +1,4 @@
 /* Global */
-@import url(https://fonts.googleapis.com/css?family=Gruppo);
 
 body {
 	font-family:  'Open Sans', sans-serif;
@@ -93,6 +92,7 @@ a:visited {
 #slide1{
 
 	background-color:#a2d3f7;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 
 }
 #slide1 .ch-info h3{
@@ -134,7 +134,7 @@ a:visited {
 
 #slide2{
 	
-	background-image:url('../images/99.png');
+	background-image:url('../images/100.png');
 	color:#58536b;
 }
 #slide2 h1 {
@@ -411,6 +411,7 @@ http://www.freshdesignweb.com/css3-hover-effects-with-websymbols-tutorial.html
 #slide3{
 
 	background-color:#a2d3f7;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 #slide3 h1 {
 	font-size: 3.8em;
@@ -443,9 +444,10 @@ http://www.freshdesignweb.com/css3-hover-effects-with-websymbols-tutorial.html
 /* Slide 4 */
 
 #slide4{
-	background-image:url('../images/88.png');
+	background-image:url('../images/101.png');
 	background-color:#8a8683;
 	color:#ffffff;
+	
 
 }
 #slide4 h1 {

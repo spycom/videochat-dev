@@ -10,7 +10,7 @@
 .grid_9 { width: 60%; } 
 .grid_10 { width: 60%; } 
 .grid_11 { width: 60%; } 
-.grid_13 { width: 90%; }
+.grid_13 { width: 60%; }
 .grid_12 { width: 100%; } 
 
 .grid_1,
@@ -38,7 +38,7 @@
 
 .container{
 	width: 100%; /*width: 1000px;*/
-	max-width: 1100px;
+	max-width: 1200px;
 	margin: auto;
 	
 }
