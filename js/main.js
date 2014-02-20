@@ -64,7 +64,7 @@ socket.on('start', function (data) {
   rooms_list.innerHTML = '';
   for (var i=0; i < data.length; i++){
     if (data[i].substring(1) != '') {
-      rooms_list.innerHTML += "<a href=?" + data[i].substring(1)+" target=_self>" + data[i].substring(1) + '</a><br>';
+      rooms_list.innerHTML += "<div id='test' class='grid_2'>* <a href=?" + data[i].substring(1)+" target=_self>" + data[i].substring(1) + '</a></div>';
     }
     //document.getElementById("rooms").innerHTML = rooms;
   }
@@ -558,29 +558,29 @@ function initialize() {
 
 
   var mapOptions = {
-    zoom: 2,
+    zoom: 3,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
   map = new google.maps.Map(document.getElementById('map-canvas'),
       mapOptions);
-console.log('step2');
+//console.log('step2');
   // Try HTML5 geolocation
   if(navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(position) {
       var pos = new google.maps.LatLng(position.coords.latitude,
                                        position.coords.longitude);
-console.log('ksdfksd');
+//console.log('ksdfksd');
       var infowindow = new google.maps.InfoWindow({
         map: map,
         position: pos,
-        content: "Here you are!"
+        content: "Here you are"
       });
       
 
 
       //var location_array = [london];
       //var location_array = [chicago,anchorage,mexico,equator,london,johannesburg,kinshasa,sydney];
-console.log('middle step');
+//console.log('middle step');
       var coord;
       var markers = [];
       var infowindow = new google.maps.InfoWindow({
@@ -596,7 +596,7 @@ console.log('middle step');
         markers.push(marker);
 
       };
-	console.log('end');
+	//console.log('end');
       var m;
       var i=0;
       for (m in markers) {
