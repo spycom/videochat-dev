@@ -558,7 +558,7 @@ function initialize() {
 
 
   var mapOptions = {
-    zoom: 3,
+    zoom: 4,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
   map = new google.maps.Map(document.getElementById('map-canvas'),
