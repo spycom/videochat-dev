@@ -569,18 +569,19 @@ function initialize() {
     navigator.geolocation.getCurrentPosition(function(position) {
       var pos = new google.maps.LatLng(position.coords.latitude,
                                        position.coords.longitude);
-//console.log('ksdfksd');
+
       var infowindow = new google.maps.InfoWindow({
         map: map,
         position: pos,
-        content: "Here you are"
+        
+        content: "<div>You are here</div>"
       });
       
 
 
       //var location_array = [london];
       //var location_array = [chicago,anchorage,mexico,equator,london,johannesburg,kinshasa,sydney];
-//console.log('middle step');
+
       var coord;
       var markers = [];
       var infowindow = new google.maps.InfoWindow({
