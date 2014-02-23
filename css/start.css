@@ -128,7 +128,7 @@ a:visited {
 .my_video{
 	display: block;
 	min-width: 400px;
-	min-height: 400px;
+	min-height: 300px;
 	position: absolute;
 	background-color:#f2e9e4;
 
