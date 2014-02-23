@@ -407,6 +407,11 @@ a:visited {
 
 }
 
-
+#map-canvas, #map_canvas {
+  position: relative;
+  margin: auto;
+  height: 500px;
+  width: 80%;
+}
 
 
