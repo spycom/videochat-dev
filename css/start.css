@@ -120,24 +120,27 @@ a:visited {
 .video{
 	display: block;
 	background-color:#58536b; 
-	min-width: 100%;
-	min-height: 360px;
+	min-width: 640px;
+	min-height: 480px;
 	position: relative;
-	
+	margin-left: 30%;
     
 
 }
 .my_video{
 	display: block;
-	min-width: 200px;
-	min-height: 100px;
-	position: relative;
+	min-width: 100px;
+	min-height: 80px;
+	
+	position: absolute;
 	background-color:#f2e9e4;
-
-	float: right;
-	margin-left: 102%;
-	margin-top: -5%;
-
+	font-weight: bold;
+    
+    
+    z-index: 1;
+    
+    margin-left: 80%;
+    margin-top: 50%;
 }
 .chat{
 	display: block;
