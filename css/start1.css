@@ -161,14 +161,15 @@ a:visited {
 	padding-bottom:20px;
 	font-weight: 400;
 }
-#map-canvas, #map_canvas {
+#map-canvas{
   
   margin: auto;
-  height: 50%;
-  width: 50%;
+  height: 70%;
+  width: 70%;
 }
-#map-canvas, #map_canvas {
+#map-canvas{
     height: 650px;
+    width: 1020px;
   }
 
 
